@@ -45,9 +45,9 @@ const FormularioContacto = () => {
   // Diseño del formulario con código HTML y elementos de MUI Material
 
   return (
-    <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 500, mx: 'auto', mt: 5, p: 2, boxShadow: 3, borderRadius: 2, bgcolor: 'background.paper' }}>
+    <Box component="form" onSubmit={handleSubmit} sx={{ maxWidth: 500, mx: 'auto', mt: 5, p: 2, boxShadow: 3, borderRadius: 2, textAlign: 'center', bgcolor: 'background.paper' }}>
       <Typography variant="h4" mb={3}>
-        Formulario de Contacto, sea usted bienvenido!
+        FORMULARIO DE CONTACTO, SEA USTED BIENVENIDO!
       </Typography>
       {error && (
         <Typography variant="body1" color="error" mb={2}>
@@ -98,7 +98,7 @@ const FormularioContacto = () => {
         rows={4}
         required
       />
-      <Button type="submit" variant="contained" color="primary" sx={{ mt: 3 }}>
+      <Button type="submit" variant="contained" color="primary" sx={{ mt: 5 }}>
         Enviar
       </Button>
     </Box>
